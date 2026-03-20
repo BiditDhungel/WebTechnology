@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Student Dashboard</h1>
+
+<input type="text" id="searchStudent" placeholder="Search by name...">
+<select id="deptFilter">
+    <option value="">All Departments</option>
+    <option value="CSE">CSE</option>
+    <option value="IT">IT</option>
+    <option value="ECE">ECE</option>
+    <option value="ME">ME</option>
+    <option value="CE">CE</option>
+</select>
+
+<button onclick="sortStudents()">Sort by Marks</button>
+
+<table id="studentTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Dept</th>
+            <th>Course</th>
+            <th>Marks</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<hr>
+
+<h1>Market Dashboard</h1>
+
+<input type="text" id="searchItem" placeholder="Search item...">
+<select id="typeFilter">
+    <option value="">All Types</option>
+    <option value="Goods">Goods</option>
+    <option value="Electronics">Electronics</option>
+</select>
+
+<button onclick="sortItems()">Sort by Price</button>
+
+<table id="marketTable">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<h2>Cart</h2>
+<ul id="cart"></ul>
+
+<h3>Add New Item</h3>
+<input type="text" id="newItem" placeholder="Item Name">
+<input type="text" id="newType" placeholder="Type">
+<input type="number" id="newPrice" placeholder="Price">
+<button onclick="addItem()">Add Item</button>
+
+<script src="script.js"></script>
+</body>
+</html>
